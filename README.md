@@ -1,16 +1,59 @@
-## Hi there 👋
+# Barthava
 
-<!--
-**barthava/barthava** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Barthava** is a technology-driven company focused on building intelligent digital systems and AI-powered solutions.
 
-Here are some ideas to get you started:
+🌐 Website: https://barthava.net
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 🚀 What We Do
+
+We design, develop, and deploy scalable solutions in the following domains:
+
+- **Full-Stack Web Development**  
+  Modern, secure, and scalable web platforms
+
+- **Application Development**  
+  Custom web & system applications tailored to business needs
+
+- **IoT Solutions**  
+  Smart, connected systems and device-level integrations
+
+- **Electronic Device Design & Development**  
+  From concept to production of electronic hardware
+
+- **Electronic Board Design & Implementation**  
+  PCB design, prototyping, and embedded system integration
+
+- **Digital & Electronic Automation**  
+  Workflow automation, smart control systems, and digital processes
+
+- **AI Assistants & Intelligent Systems**  
+  Custom AI assistants, automation bots, and AI-powered tools
+
+---
+
+## 🧠 Our Approach
+
+- Clean architecture & scalable design  
+- Security-first development  
+- AI-enhanced automation  
+- Long-term maintainability
+
+---
+
+## 🛠️ Core Technologies
+
+- Laravel, NestJS
+- Next.js, TypeScript
+- Embedded Systems & IoT
+- AI & Automation
+- API-driven architectures
+
+---
+
+## 📫 Contact & Collaboration
+
+We are open to collaborations, partnerships, and innovative projects.
+
+👉 https://barthava.net
