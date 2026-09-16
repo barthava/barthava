@@ -1,0 +1,31 @@
+name: SP2L 6M Backtest
+on:
+  workflow_dispatch:
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install pandas numpy
+      - name: Download XAUUSD M1/M5
+        run: |
+          curl -L --fail --retry 3 -o XAUUSD_1m.csv https://raw.githubusercontent.com/getdata-finance/xauusd-1m-ohlcv-metals-historical-data/main/XAUUSD_1m.csv
+          curl -L --fail --retry 3 -o XAUUSD_5m.csv https://raw.githubusercontent.com/getdata-finance/xauusd-5m-ohlcv-metals-historical-data/main/XAUUSD_5m.csv
+          ls -lh XAUUSD_*.csv
+      - name: Run backtest
+        run: python sp2l_backtest_20260916.py | tee sp2l_backtest.log
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: SP2L-6M-results
+          path: |
+            SP2L_6M_summary.json
+            SP2L_M1_trades.csv
+            SP2L_M5_trades.csv
+            sp2l_backtest.log
