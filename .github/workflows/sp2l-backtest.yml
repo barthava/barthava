@@ -1,5 +1,7 @@
 name: SP2L 6M Backtest
 on:
+  push:
+    branches: [chatgpt-sp2l-backtest-20260916]
   workflow_dispatch:
 jobs:
   backtest:
